@@ -22,7 +22,13 @@ La API está diseñada para recibir solicitudes HTTP con un formato JSON y envia
 
 ## Ejecución
 
-1. Enviar un correo electrónico
+1. Personalizar credenciales de autentificación (config/.env.example):
+
+   ```bash
+   EMAIL_USER= iswexample@alumnos.ubiobio.cl
+   EMAIL_PASS= wfe3 asdw asdt asdt
+
+2. Enviar un correo electrónico
 
 Envía una solicitud POST a la siguiente ruta con el cuerpo en formato JSON:
 
@@ -43,7 +49,7 @@ Respuesta esperada:
       "status": "Success",
       "message": "Correo enviado con éxito"
       "data": {
-          "from": *\*Nombre declarado del autor*\*, <Correo electronico del autor>,
+          "from": *\*Ingeniería de Software 2024 - 2*\*, <iswexample@alumnos.ubiobio.cl>,
           "to": <example@alumnos.ubiobio.cl>,
           "subject": <ISW 2024 - 2>,
           "text": <Prueba de envío realizada correctamente a través de Postman.>,
